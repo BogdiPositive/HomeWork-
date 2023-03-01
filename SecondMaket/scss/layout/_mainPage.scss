@@ -1,0 +1,119 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+  @include respond (tab-port) {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+  
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    justify-content: center;
+    margin-left: 10rem;
+    z-index: 2;
+
+    &-text {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    &-text h1 {
+      font-family: $sub-font-family;
+      font-style: normal;
+      font-size: 4.5rem;
+      line-height: 6rem;
+      position: relative;
+    }
+
+    &-text h1::before {
+      content: " ";
+      border: 1px solid #8b8371;
+      width: 5rem;
+      position: absolute;
+      top: 50%;
+      left: -8rem;
+    }
+    &-text h2 {
+      font-family: $sub-font-family;
+      font-style: normal;
+      font-size: 3rem;
+      line-height: 4rem;
+    }
+    &-text p {
+      width: 25rem;
+      line-height: 21px;
+    }
+   
+  }
+  &__right {
+    position: relative;
+    
+    &-elipse {
+      position: absolute;
+      height: 77rem;
+      left: -25rem;
+      top: 0;
+      z-index: 1;
+      @include respond (tab-port){
+        left: -10rem
+      }
+    }
+
+    &-watch {
+      position: relative;
+      height: 77rem;
+      z-index: 2;
+      @include respond (tab-port){
+        width: 40rem;
+      }
+    }
+    &-toptext {
+      position: absolute;
+      top: 7rem;
+      left:-5rem;
+      font-size: 1.6rem;
+      font-family: $font-for-price;
+      @include respond (tab-port){
+        left: -10rem;
+        top: 25rem
+      }
+    }
+    &-toptext span {
+      font-size: 1.6rem;
+      padding: 1rem;
+    }
+    &-toptext span::after {
+      content: " ";
+      border: 1px solid #8b8371;
+      width: 5rem;
+      position: absolute;
+      top: 50%;
+      left: 10rem;
+    }
+
+    &-bottext {
+      position: absolute;
+      z-index: 2;
+      top: 75%;
+      left: 8%;
+      font-size: 1.6rem;
+      font-family: $font-for-price;
+      padding: 0.5rem;
+      @include respond (tab-port){
+        left: 30rem;
+      }
+    }
+  }
+
+  &__btn {
+    width: 21rem;
+    padding: 2rem 1rem;
+    background-color: #444240;
+    color: #ffffff;
+    border: none;
+  }
+}

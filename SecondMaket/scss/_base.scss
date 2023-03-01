@@ -1,0 +1,41 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+   // 1 rem 
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+
+ }
+
+body {
+    box-sizing: border-box;
+    font-size: 1.4rem;
+   
+
+}
+
+ul, li , a{
+    text-decoration: none;
+    list-style: none;
+    color: inherit;
+}
+
+.wrapper {
+    max-width: 116.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    @include respond (tab-land) {
+        width: 100vw;
+    }
+
+
+}

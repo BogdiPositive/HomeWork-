@@ -1,0 +1,14 @@
+{
+  "name": "secondmaket",
+  "version": "1.0.0",
+  "description": "homework maket",
+  "main": "index.html",
+  "scripts": {
+    "compile:sass": "node-sass scss/main.scss css/main.css -w"
+  },
+  "author": "Bogdan Rossov",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
+}

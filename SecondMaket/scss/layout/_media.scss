@@ -1,0 +1,68 @@
+.media{
+    display: flex;
+    padding-top: 6rem;
+    gap: 5rem;
+    padding-bottom: 6rem;
+    @include respond (tab-port){
+        flex-direction: column;
+        padding-left: 10rem;
+        gap: 10rem;
+      }
+
+    &__left{
+        display: flex;
+        flex-direction: column;
+        gap: 20rem;
+        justify-content: center;
+        max-width: 50rem;
+        @include respond (tab-land){
+            padding-left: 2rem;
+          }
+        @include respond (tab-port){
+           gap: 10rem;
+          }
+
+        &-text h2{
+            font-family:$sub-font-family;
+            font-size: 3.2rem;
+            line-height: 4.3rem;
+            padding-bottom: 2rem;
+        }
+        &-text p{
+            font-size: 1.6rem;
+            line-height: 2.7rem;
+        }
+        &-text span {
+            font-weight: 700;
+        }
+
+        &-list{
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+    }
+    &__right{
+        display: grid;
+        grid-template-columns: 25rem 25rem;
+        grid-template-rows: 23rem;
+        gap:1rem;
+        @include respond (tab-port){
+        display: flex;
+        flex-wrap: wrap;
+
+        
+        }
+        
+       
+        
+    }
+    &__right img{
+
+     object-fit:cover; 
+     @include respond (phone){
+        width: 70%;
+      }
+      
+    }
+}

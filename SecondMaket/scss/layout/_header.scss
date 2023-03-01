@@ -1,0 +1,64 @@
+.header {
+ display: flex;
+ justify-content: space-between;
+ height: 8.5rem;
+ align-items: center;
+ @include respond (tab-land) {
+padding-left: 2rem;
+padding-right: 2rem;
+}
+
+&__nav{
+  &-menu{
+    @include respond (tab-port) {
+    
+      display: none;
+    }
+    
+  }
+  &-list{
+    display: flex;
+    gap: 6rem;
+    @include respond (tab-land) {
+      gap:5rem
+  }
+  @include respond (tab-port) {
+    
+    gap: 3rem;
+  }
+  }
+  
+}
+&__cart{
+  display: flex;
+  gap: 3rem;
+  @include respond (tab-port){
+    display: none;
+    gap: 2;
+  }
+}
+&__toggle{
+  display: none;
+  @include respond (tab-port) {
+    width: 1rem;
+    display: block;
+  }
+  &-btn{
+    border: none;
+    background-color: inherit ;
+   
+  }
+  &-btn img{
+    width: 2rem;
+    
+    
+  }
+
+}
+}
+
+
+
+.bg__main{
+background-color: #FDFDFB;
+}

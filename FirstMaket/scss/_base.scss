@@ -1,0 +1,33 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+   // 1 rem 
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+
+ }
+
+body {
+    box-sizing: border-box;
+
+}
+
+ul, li , a{
+    text-decoration: none;
+    list-style: none;
+    color: inherit;
+}
+
+main {
+    background-color: $color-gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

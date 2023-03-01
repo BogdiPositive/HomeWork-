@@ -1,0 +1,59 @@
+.footer{
+    background-color: #444240;
+    
+
+   &__container{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    display: flex;
+    justify-content: space-around;
+    @include respond (tab-port){
+        flex-wrap: wrap;
+        gap: 3rem;
+        
+      }
+   }
+   &__contacts{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    @include respond (phone){
+        margin-left: -2rem;
+    }
+
+    &-logo{
+        padding-bottom: 1rem;
+        
+    }
+    
+   }
+   &__contacts a{
+    color: #ffffff;
+    opacity: 75%;
+    font-size: 1.2rem;
+
+
+   }
+
+   &__info{
+
+    &-title{
+        color: #ffffff;
+        padding-bottom: 3rem;
+    }
+    &-list{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    &-link {
+        color: #ffffff;
+        opacity: 75%;
+        font-size: 1.2rem;
+    }
+   }
+
+
+
+}

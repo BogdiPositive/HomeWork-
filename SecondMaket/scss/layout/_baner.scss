@@ -1,0 +1,69 @@
+.baner {
+  &__container {
+    padding: 7rem 0;
+    margin-left: 10rem;
+    display: flex;
+    gap: 6rem;
+    @include respond (tab-port){
+      flex-direction: column;
+      
+     
+    }
+  }
+  
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-self: center;
+  }
+
+  &__right h2 {
+    font-family: $sub-font-family;
+    font-size: 32px;
+    line-height: 43px;
+  }
+  &__right p {
+    font-size: 16px;
+    line-height: 150%;
+  }
+  &__right button {
+    width: 23rem;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 2em 3rem;
+    color: #ffffff;
+    background: #d4b098;
+  }
+
+  &__left {
+    position: relative;
+    &-img{
+      @include respond (tab-port){
+        width: 80%;
+      }
+    }
+
+    &-control {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      position: absolute;
+      bottom: -3rem;
+      left: 85%;
+    }
+    &-control button {
+      color: #1b1a17;
+      font-size: 2rem;
+      border: none;
+      background-color: inherit;
+    }
+
+    &-control p {
+      font-family:$font-for-price;
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.nav {
+    background-color: $color-gray;
+    height: 5rem;
+    @include respond (tab-port){
+       height: 7rem;
+    }
+    @include respond (phone){
+        height: 9rem;
+    }
+    
+    &__list {
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        font-size: $def-font-size;
+        @include respond (tab-port){
+            flex-wrap: wrap;
+            
+        }
+    }
+    &__item{
+        
+        padding: 0.5rem;
+        margin: 1rem;
+        text-align: center;
+    }
+
+}
+
+.second__nav{
+    height: 6rem;
+    background-color: white;
+    &-list{
+        font-size: 1.6rem;
+    }
+    @include respond (tab-port){
+        height: 7rem;
+     }
+     @include respond (phone){
+         height: 9rem;
+     }
+}

@@ -1,0 +1,17 @@
+.btn{
+transition: all .2s ease-in-out
+}
+.btn:hover{
+    transform: scale(1.1);
+    box-shadow: 0 .5rem 1rem rgba(rgba(0, 0, 0, 0.895), .2);
+}
+.btn:active
+{
+    outline: none;
+    transform: translateY(-2px);
+    
+}
+
+
+
+

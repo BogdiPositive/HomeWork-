@@ -1,0 +1,106 @@
+.product {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 5rem;
+  gap: 5rem;
+  @include respond (tab-port){
+    padding-bottom: 5rem;
+  }
+  &__title {
+    position: relative;
+  }
+  &__title h1 {
+    font-family: $sub-font-family;
+    color: $color-dark;
+    font-size: 32px;
+    line-height: 43px;
+  }
+
+  &__btn {
+    position: absolute;
+    color: $color-gray;
+    font-size: 16px;
+    line-height: 19px;
+    top: 50%;
+    right: 0;
+    background-color: #ffffff;
+    padding-bottom: 0.5rem;
+    border: none;
+    border-bottom: 1px solid #c4c0b6;
+    @include respond (tab-port){
+      right: 5rem;
+    }
+    @include respond (phone){
+      right: 5rem;
+      top: 7rem
+    }
+  }
+
+  &__container {
+    display: flex;
+    gap: 2rem;
+    @include respond (tab-port){
+      flex-direction: column;
+      align-items: center;
+      gap: rem;
+    }
+  }
+
+  &__item {
+    background-color: #fdfdfb;
+    text-align: start;
+    @include respond (tab-port){
+      text-align: center;
+    }
+
+    &-title {
+      font-family: $sub-font-family;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 0.03em;
+      padding-left: 3rem;
+      padding-top: 3rem;
+      @include respond (tab-port){
+        font-size: 16px;
+      }
+    }
+
+    &-price {
+      font-family: $font-for-price;
+      font-size: 12px;
+      line-height: 16px;
+      padding-left: 3rem;
+    }
+
+    &-img {
+      margin-left:2rem;
+      border: 1px solid #e2d0c4;
+      border-radius: 50%;
+    }
+
+    &-btn {
+      position: relative;
+      font-family: $sub-font-family;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 21px;
+      margin-left: 10rem;
+      margin-bottom: 3rem;
+      color: #1b1a17;
+      border: none;
+      background-color: inherit;
+    }
+
+    &-btn::before {
+      content: " ";
+      border: 1px solid #8b8371;
+      width: 4rem;
+      position: absolute;
+      top: 50%;
+      left: -6rem;
+    }
+  }
+}

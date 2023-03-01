@@ -1,0 +1,80 @@
+.offers{
+    display: flex;
+    justify-content:center;
+    max-width: 110rem;
+    padding-bottom: 9rem;
+    gap: 4rem;
+    @include respond (tab-land){
+     flex-direction: column;
+    }
+    
+
+    &__left{
+      background-color:$color-green;
+      width: 55rem;
+      height: 20rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @include respond(tab-port){
+        width: 40rem;
+      }
+    }
+
+      &-content {
+        width: 25rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-left: 2rem ;
+        
+      }
+
+    
+
+    &__right{
+        background-color:$color-green;
+        width: 55rem;
+        height: 20rem;
+        display: flex;
+        align-items: center;
+        @include respond(tab-port){
+            width: 40rem;
+          }
+
+    }
+
+    &__image{
+        width: 14rem;
+        margin-right: 2rem;
+    }
+
+
+    &__title{
+        font-weight: 700;
+        font-size: 1.8rem;
+        color: white;
+
+    }
+
+    &__text{
+        font-size:$def-font-size;
+        color:white;
+    }
+    &__input{
+        width: 20rem;
+        padding: .5rem 1rem;
+        font-size: $def-font-size;
+        border: 1px $color-green;
+        border-radius: 30px;
+    }
+
+    &__link{
+        font-size:$def-font-size;
+        color:white;
+        padding: 1rem 2rem;
+        border: 2px solid white;
+        border-radius: 3rem;
+    }
+    
+}

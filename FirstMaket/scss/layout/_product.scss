@@ -1,0 +1,28 @@
+.product{
+   max-width: 110rem;
+   margin: 8rem auto;
+ &__upper{
+    @include respond (tab-port){
+        margin-left: 1rem;
+     }
+     @include respond (phone){
+         margin-left: 4rem;
+     }
+    &-title{
+        font-size: 2.4rem;
+        font-weight: bold;
+        
+    }
+ }
+ &__lower{
+    margin-top: 6rem;
+    display: flex;
+    justify-content: space-between;
+    gap:2rem;
+    @include respond (tab-land){
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+ }
+  
+}
