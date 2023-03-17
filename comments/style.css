@@ -1,0 +1,57 @@
+.form{
+    width: 420px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+.form-control {
+    margin: 0.5rem 0;
+   
+  }
+  label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  input label {
+    font-weight: normal;
+    display: inline;
+    margin: 0 0 0 0.5rem;
+  }
+  input,
+  textarea {
+    display: block;
+    width: 100%;
+    border: 1px solid #ccc;
+    font: inherit;
+  }
+  input:focus,
+  textarea:focus {
+    background-color: #f0e6fd;
+    outline: none;
+    border-color: #3d008d;
+  }
+  
+  .wrapper {
+    width: 420px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border: 3px solid rgb(59, 58, 58);
+    box-shadow: #3f3e40;
+    padding: 10px;
+    
+  }
+  .commentDiv{
+    border: 2px solid rgb(48, 48, 48);
+    padding: 10px;
+    
+  }
+
+  .isLiked{
+    color: red;
+    border: 2px solid red;
+  }

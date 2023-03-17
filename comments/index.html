@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+  </head>
+  <body>
+      <form action="submit" onsubmit="" class="form">
+        <div class="form-control"> 
+        <label for="name" >Name</label>
+        <input id="name" required placeholder="Enter your name" type="text"/>
+        </div>
+        <div class="form-control">
+      <label for="comment">Comment</label>
+        <textarea
+          rows="5"
+          id="comment"
+          placeholder="Enter your comment"
+          required
+        ></textarea>
+    </div>
+    <div class="form-control">
+      <label for="date">Date</label>
+        <input type="text" placeholder="dd-mm-yy" id="date"/>
+    </div>
+      <input type="submit" class="submitBtn" value="comment"/>
+    </form>
+  <div class="wrapper">
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
